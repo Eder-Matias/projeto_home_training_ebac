@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+:root {
+    --cor0: #778EB6;
+    --cor1: #E2E8F0;
+    --cor2: #CFEEF7;
+    --cor4: #A9E2E1;
+    --cor5: #7DD6D4;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Calligraffitti', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0 20px;
+}
+
+.container_header, .container_sobre, .container_treino, .container_dicas, .container_contatos {
+    max-width: 1366px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.container_header {
+    background-color: var(--cor5);
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+header h1 {
+    font-size: 45px;
+    color: var(--cor1);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.474);
+    font-family: var(--font-destaque);
+    font-weight: none;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+}
+
+header nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--cor1);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.474);
+    font-family: var(--font-padrao);
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+    font-size: 23px;
+    color: black;
+}
+
+.img_sobre {
+    height: 400px;
+    margin-right: 20px;
+}
+
+.container_sobre h2 {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: var(--cor0);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.107);
+    font-family: var(--font-destaque);
+}
+
+.container_sobre p {
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 20px;
+    font-family: var(--font-padrao);
+}
+
+.container_sobre .paragrafo_sobre2 {
+    padding-bottom: 70px;
+}
+
+.container_sobre .descricao_sobre {
+    background-color: var(--cor2);
+}
+
+#treino h2, #dicas h2, #contatos h2 {
+    background-image: linear-gradient(to right, var(--cor5), var(--cor2), var(--cor1));
+    color: var(--cor0);
+    padding: 20px 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.107);
+    font-family: var(--font-destaque);
+}
+
+.container_treino {
+    position: relative;
+}
+
+.treino_woman {
+    position: absolute;
+    top: 0;
+    left: 34%;
+}
+
+
+.treino img, .dicas img {
+    height: 200px;
+    width: 300px;
+}
+
+.treino img:hover, .dicas img:hover {
+    opacity: 70%;
+}
+
+section h2 {
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.treino article h3, .dicas article h3, .metodos_contato h3 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: var(--cor0);
+    font-weight: bold;
+    font-family: var(--font-padrao);
+}
+
+.treino_man article p, .treino_woman article p {
+    text-align: justify;
+    width: 22%;
+    font-family: var(--font-padrao);
+}
+
+.treino_woman article p {
+    width: 36%;
+}
+
+.dicas article p {
+    text-align: justify;
+    width: 65%;
+    font-family: var(--font-padrao);
+}
+
+.dicas article a {
+    background-color: var(--cor4);
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--cor0);
+    font-weight: bold;
+    font-family: var(--font-padrao);
+}
+
+.dicas article a:hover {
+    text-decoration: underline;
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+
+.container_contatos {
+    display: block;
+}
+
+.metodos_contato {
+    display: flex;
+    justify-content: space-between;
+}
+.metodos_contato a {
+    margin-right: 20px;
+}
+
+.redes-sociais .fa-brands {
+    font-size: 50px;
+    color: var(--cor5);
+}
+
+form input, textarea, button {
+    display: block;
+    margin-bottom: 5px;
+    width: 300px;
+    padding: 10px;
+    font-family: var(--font-padrao);
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--cor4);
+    font-size: 20px;
+    border-radius: 5px;
+    color: var(--cor0);
+    font-weight: bold;
+    padding: 10px;
+    font-family: var(--font-padrao);
+}
+
+button:hover {
+    background-color: var(--cor0);
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+.metodos_contato {
+    position: relative;    
+}
+
+.redes-sociais, .endereco {
+    position: absolute;
+    top: 30%;
+    left: 34%;
+}
+
+.endereco {
+    left: 68%;
+    font-size: 20px;
+}
+
+footer {
+    max-width: 1366px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--cor5);
+    padding: 20px;
+    color: var(--cor1);
+    font-family: var(--font-destaque);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.474);
+}
+
+span {
+    font-size: 20px;
+}
